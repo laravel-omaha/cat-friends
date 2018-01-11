@@ -32,7 +32,7 @@
             <div class="container">
 
                 <div class="content">
-                    Here's some content
+                    All about the cats cats cats.
                 </div>
         </div>
 
