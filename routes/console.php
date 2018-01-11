@@ -39,7 +39,7 @@ Artisan::command('cats:seed-breeds', function () {
 
         $this->info('Created ' . $breed);
     });
-});
+})->describe('Set up some cat breeds in the database.');
 
 Artisan::command('cats:seed-toys', function () {
     $toys = collect([
@@ -63,7 +63,7 @@ Artisan::command('cats:seed-toys', function () {
 
         $this->info('Created ' . $toy);
     });
-});
+})->describe('Set up some cat toys in the database.');
 
 Artisan::command('cats:fresh', function () {
     if ($this->confirm('Reset Database and seed Default Cat Friends Data?')) {
@@ -74,4 +74,4 @@ Artisan::command('cats:fresh', function () {
         $this->call('cats:seed-breeds');
         $this->call('cats:seed-toys');
     }
-});
+})->describe('Reset all databases and seed some sane data for development.');
