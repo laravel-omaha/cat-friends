@@ -1,1 +1,7 @@
-@import "~bulma"
+@import "bulma-bootstrap";
+
+.navbar {
+    border-top: 10px solid $primary;
+    border-bottom: 2px solid $primary;
+    margin-bottom: 30px;
+}
