@@ -25,7 +25,7 @@ class CatController extends Controller
      */
     public function create()
     {
-        //
+        return view('cats.create');
     }
 
     /**
@@ -36,7 +36,10 @@ class CatController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Cat::create($request->all);
+
+        return response()
+            ->redirect('/');
     }
 
     /**
@@ -58,7 +61,8 @@ class CatController extends Controller
      */
     public function edit(Cat $cat)
     {
-        //
+        return view('cats.edit')
+            ->withCat($cat);
     }
 
     /**
@@ -70,7 +74,10 @@ class CatController extends Controller
      */
     public function update(Request $request, Cat $cat)
     {
-        //
+        $cat->update($request->all());
+
+        return response()
+            ->redirect('/');
     }
 
     /**
@@ -81,6 +88,9 @@ class CatController extends Controller
      */
     public function destroy(Cat $cat)
     {
-        //
+        $cat->delete();
+
+        return response()
+            ->redirect('/');
     }
 }

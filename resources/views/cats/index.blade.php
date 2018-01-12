@@ -2,34 +2,48 @@
 
 @section('content')
 
-@foreach ($cats as $cat)
-<div class="card">
-    <div class="card-image">
-        <figure class="image is-4by3">
-            <img src="{{ asset('img/cats/' . $cat->image) }}" alt="{{ $cat->name }}">
-        </figure>
-    </div>
-    <div class="card-content">
-        <div class="media">
-            <div class="media-left">
-                <figure class="image is-48x48">
-                    <img src="{{ asset('img/cats/' . $cat->image) }}" alt="{{ $cat->name }}">
-                </figure>
+<p>
+    <a class="button is-primary" href="{{ route('cats.create') }}">
+        <span>Add a Cat</span>
+        <icon icon="plus"></icon>
+    </a>
+</p>
+
+<div class="columns is-multiline">
+    @foreach ($cats as $cat)
+    <div class="column is-one-third">
+        <div class="box">
+            <figure class="image is-4by2" style="width: 300px">
+                <img src="{{ asset('img/cats/' . $cat->image) }}" alt="{{ $cat->name }}">
+            </figure>
+
+            <div class="content">
+                <p class="title">{{ $cat->name }}</p>
+                <p class="subtitle">{{ $cat->age }} yrs old</p>
+
+                <p><strong>Breed:</strong> {{ $cat->breed->name }}</p>
+                <p><strong>Bio:</strong></p>
+
+                {{ $cat->bio }}
             </div>
-            <div class="media-content">
-                <p class="title is-4">{{ $cat->name }}</p>
-                <p class="subtitle is-6">{{ $cat->age }} yrs old</p>
+
+            <div class="level box">
+                <div class="level-item">
+                    <a href="{{ route('cats.edit', $cat) }}">
+                        <span>Edit</span>
+                        <icon icon="pencil"></icon>
+                    </a>
+                </div>
+                <div class="level-item">
+                    <a href="{{ route('cats.destroy', $cat) }}">
+                        <span>Delete</span>
+                        <icon icon="delete"></icon>
+                    </a>
+                </div>
             </div>
         </div>
-
-        <div class="content">
-            <p><strong>Breed:</strong> {{ $cat->breed }}</p>
-            <p><strong>Bio:</strong></p>
-
-            {{ $cat->bio }}
-        </div>
     </div>
+    @endforeach
 </div>
-@endforeach
 
 @endsection
