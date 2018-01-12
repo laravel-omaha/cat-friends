@@ -16,6 +16,7 @@ window.Vue = require('vue');
  */
 
 Vue.component('icon', require('./components/Icon.vue'));
+Vue.component('delete-button', require('./components/DeleteButton.vue'));
 
 const app = new Vue({
     el: '#app'

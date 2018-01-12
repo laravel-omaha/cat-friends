@@ -36,10 +36,9 @@ class CatController extends Controller
      */
     public function store(Request $request)
     {
-        Cat::create($request->all);
+        Cat::create($request->all());
 
-        return response()
-            ->redirect('/');
+        return redirect('/');
     }
 
     /**
@@ -76,8 +75,7 @@ class CatController extends Controller
     {
         $cat->update($request->all());
 
-        return response()
-            ->redirect('/');
+        return redirect('/');
     }
 
     /**
@@ -90,7 +88,6 @@ class CatController extends Controller
     {
         $cat->delete();
 
-        return response()
-            ->redirect('/');
+        return redirect('/');
     }
 }
