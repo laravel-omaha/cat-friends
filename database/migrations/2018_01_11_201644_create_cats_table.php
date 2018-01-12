@@ -18,6 +18,7 @@ class CreateCatsTable extends Migration
 
             $table->string('name');
             $table->integer('age');
+            $table->string('image');
             $table->text('bio')
                 ->nullable();
             $table->integer('breed_id')
