@@ -15,7 +15,8 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('icon', require('./components/Icon.vue'));
+Vue.component('delete-button', require('./components/DeleteButton.vue'));
 
 const app = new Vue({
     el: '#app'
