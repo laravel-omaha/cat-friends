@@ -32,7 +32,8 @@
             <div class="container">
 
                 <div class="content">
-                    All about the cats cats cats.
+                    @yield('content')
+
                 </div>
         </div>
 

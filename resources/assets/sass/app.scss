@@ -1,1 +1,10 @@
-@import "~bulma"
+$mdi-font-path: '~mdi/fonts/';
+@import "~mdi/scss/materialdesignicons";
+
+@import "bulma-bootstrap";
+
+.navbar {
+    border-top: 10px solid $primary;
+    border-bottom: 2px solid $primary;
+    margin-bottom: 30px;
+}
