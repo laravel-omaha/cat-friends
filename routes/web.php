@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', 'CatController@index');
+Route::get('/', function () {
+    return view('welcome');
+});
+// Route::get('/', 'CatController@index');
 
 Route::resource('cats', 'CatController')
     ->except('index', 'show');
