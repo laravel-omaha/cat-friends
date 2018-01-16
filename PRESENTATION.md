@@ -22,6 +22,8 @@
 - Google Fonts
 - Vue.js 2
 
+*Remember to switch branches...*
+
 **Laravel Artisan**
 
 - Example commands
