@@ -10,9 +10,14 @@
 
 **New Laravel Project**
 
-- Default Welcome
-- Default Migrations
-- Default Model and Factory
+- /install Laravel
+- composer global require "laravel/installer"
+- laravel new cat-friends
+- composer install
+- /waves hand at front end things...
+- Bulma
+- Google Fonts
+- Vue.js 2
 
 **Laravel Artisan**
 
