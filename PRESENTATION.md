@@ -1,6 +1,6 @@
 **Cat Friends**
 
-*A demo Laravel Project*
+*A demo Laravel Project highlighting Laravel Artisan*
 
 **What we're building**
 
@@ -24,9 +24,9 @@
 
 **Laravel Artisan**
 
-- Default Routes
-- routes directory
 - Example commands
+- Migrate database
+- Extending Artisan
 - Seeding Data
 
 **Creating the Cats Model**
@@ -36,7 +36,11 @@
 - Defining our Model's Attributes
 - Defining our Database
 - Seeding some Cats
-- Cat Breeds?
-- Cat Toys?
+- Cat Factory
+
+**Writing our Command**
+
+- Create some cats
+- Test
 
 **Questions?...**
