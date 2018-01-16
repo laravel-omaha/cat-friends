@@ -2,25 +2,12 @@
 
 *A demo Laravel Project highlighting Laravel Artisan*
 
-**What we're building**
+**Presentation Goals**
 
-- CRUD
-- Creating, Editing and Deleting Cats
-- No show
-
-**New Laravel Project**
-
-- /install Laravel
-- composer global require "laravel/installer"
-- laravel new cat-friends
-- composer install
-
-**Prefab Branch**
-
-- /waves hand at front end things...
-- Bulma
-- Google Fonts
-- Vue.js 2
+- Extend Laravel Artisan
+- Create some MVC files quickly
+- Seed some fake data for development
+- Test our changes
 
 **Laravel Artisan**
 
