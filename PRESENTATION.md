@@ -14,6 +14,9 @@
 - composer global require "laravel/installer"
 - laravel new cat-friends
 - composer install
+
+**Prefab Branch**
+
 - /waves hand at front end things...
 - Bulma
 - Google Fonts
@@ -24,14 +27,7 @@
 - Default Routes
 - routes directory
 - Example commands
-
-**Cat Friends Prefab**
-
-- Bulma, Vue, and MDI
-- Same Default Routes
-- Custom Artisan Commands
-- routes/console
-- art tinker -> Breeds and Toys
+- Seeding Data
 
 **Creating the Cats Model**
 
