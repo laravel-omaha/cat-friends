@@ -42,17 +42,6 @@ class CatController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Cat  $cat
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Cat $cat)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Cat  $cat

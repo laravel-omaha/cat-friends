@@ -13,4 +13,5 @@
 
 Route::get('/', 'CatController@index');
 
-Route::resource('cats', 'CatController', ['except' => 'index']);
+Route::resource('cats', 'CatController')
+    ->except('index', 'show');
