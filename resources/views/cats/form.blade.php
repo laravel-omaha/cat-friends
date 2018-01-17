@@ -11,7 +11,7 @@
 <p class="control">
     {{ Form::label('breed_id', 'Breed') }}
     <div class="select">
-        {{ Form::select('breed_id', App\Cat\Breed::all()->pluck('name', 'id'), ['class' => 'select']) }}
+        {{ Form::select('breed_id', App\Cat\Breed::all()->pluck('name', 'id'), null) }}
     </div>
 </p>
 
