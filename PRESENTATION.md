@@ -22,10 +22,14 @@
 - Defining our Routes
 - Defining our Model's Attributes
 - Defining our Database
+
+**Writing our Command**
+
+- Creating an Artisan Command... with an Artisan Command!
 - Seeding some Cats
 - Cat Factory
 
-**Writing our Command**
+**Bring it all together**
 
 - Create some cats
 - Test
