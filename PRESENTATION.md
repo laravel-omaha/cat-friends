@@ -1,32 +1,19 @@
 **Cat Friends**
 
-*A demo Laravel Project*
+*A demo Laravel Project highlighting Laravel Artisan*
 
-**What we're building**
+**Presentation Goals**
 
-- CRUD
-- Creating, Editing and Deleting Cats
-- No show
-
-**New Laravel Project**
-
-- /install Laravel
-- composer global require "laravel/installer"
-- laravel new cat-friends
-- composer install
-
-**Prefab Branch**
-
-- /waves hand at front end things...
-- Bulma
-- Google Fonts
-- Vue.js 2
+- Extend Laravel Artisan
+- Create some MVC files quickly
+- Seed some fake data for development
+- Test our changes
 
 **Laravel Artisan**
 
-- Default Routes
-- routes directory
 - Example commands
+- Migrate database
+- Extending Artisan
 - Seeding Data
 
 **Creating the Cats Model**
@@ -35,8 +22,16 @@
 - Defining our Routes
 - Defining our Model's Attributes
 - Defining our Database
+
+**Writing our Command**
+
+- Creating an Artisan Command... with an Artisan Command!
 - Seeding some Cats
-- Cat Breeds?
-- Cat Toys?
+- Cat Factory
+
+**Bring it all together**
+
+- Create some cats
+- Test
 
 **Questions?...**
