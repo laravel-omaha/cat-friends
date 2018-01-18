@@ -3,7 +3,7 @@
 *A demo Laravel Project highlighting Laravel Artisan*
 *Created for the Omaha Laravel Meetup group*
 
-**by:** *@BeardAboutIt*
+**by:** *[@BeardAboutIt](https://twitter.com/BeardAboutIt)*
 
 <!-- MarkdownTOC -->
 
