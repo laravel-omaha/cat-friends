@@ -5,11 +5,11 @@
 
 **by:** *[@BeardAboutIt](https://twitter.com/BeardAboutIt)*
 
-<!-- MarkdownTOC autolink="true" autoanchor="true" -->
+<!-- MarkdownTOC autolink="true" autoanchor="true" bracket="round" -->
 
-- [Installation][installation]
-- [Meetup Presentation][meetup-presentation]
-- [Finished Version][finished-version]
+- [Installation](#installation)
+- [Meetup Presentation](#meetup-presentation)
+- [Finished Version](#finished-version)
 
 <!-- /MarkdownTOC -->
 
