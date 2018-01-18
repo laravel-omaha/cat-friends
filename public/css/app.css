@@ -21239,3 +21239,14 @@ label.panel-block:hover {
   margin-bottom: 30px;
 }
 
+.footer {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #f96854;
+}
+
+.footer,
+.footer strong {
+  color: #fff;
+}
+

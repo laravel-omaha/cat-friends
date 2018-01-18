@@ -7,3 +7,13 @@ $mdi-font-path: '~mdi/fonts/';
     border-bottom: 2px solid $primary;
     margin-bottom: 30px;
 }
+
+.footer {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: $primary;
+}
+
+.footer, .footer strong {
+    color: $primary-invert;
+}
