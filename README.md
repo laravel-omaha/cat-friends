@@ -8,6 +8,8 @@
 <!-- MarkdownTOC -->
 
 - Installation
+- Meetup Presentation
+- Finished Version
 
 <!-- /MarkdownTOC -->
 
@@ -20,3 +22,11 @@
 - Copy `.env.example` to `.env`, set any necessary details such as your database user and password.
 - `php artisan key:generate`
 - `php artisan cats:fresh`
+
+# Meetup Presentation
+
+- The [Presentation Notes](PRESENTATION.md) contain the outline of the talk.
+
+# Finished Version
+
+- You may switch to the **dryrun** branch and re-run `php artisan cats:fresh` to see a finished version of the repository.
