@@ -1,6 +1,8 @@
-**Cat Friends**
+**Laravel Artisan for Every Day Driving**
 
 *A demo Laravel Project highlighting Laravel Artisan*
+
+**by:** *@BeardAboutIt*
 
 **Presentation Goals**
 
