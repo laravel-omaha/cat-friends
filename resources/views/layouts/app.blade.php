@@ -35,10 +35,6 @@
                     @yield('content')
 
                 </div>
-            </div>
-
-            @include('partials.footer')
-
         </div>
 
         <!-- JavaScript -->
