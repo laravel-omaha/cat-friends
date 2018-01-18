@@ -29,4 +29,7 @@
 
 # Finished Version
 
-- You may switch to the **dryrun** branch and re-run `php artisan cats:fresh` to see a finished version of the repository.
+To see a finished version of the repository:
+
+- `git checkout dryrun`
+- `php artisan cats:fresh`
