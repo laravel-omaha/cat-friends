@@ -9,7 +9,7 @@
 # Installation
 
 1. Clone the repository to wherever you keep projects locally.
-  - `git clone git@gitlab.com:PeterDKC/cat-friends.git`
+  - `git clone git@github.com:laravel-omaha/cat-friends.git`
 1. Head into the cat-friends project directory.
   - `cd cat-friends`
 1. Install the Composer dependencies.
