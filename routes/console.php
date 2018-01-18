@@ -73,16 +73,17 @@ Artisan::command('cats:associate-toys', function () {
 
     Breed::all()->each(function ($breed) {
         $toys = Toy::all()
-            ->random(rand(2, 4))
-            ->each(function ($toy) use ($breed) {
-                $this->info("Associating {$toy->name} with {$breed->name}.");
-            });
+            ->random(rand(2, 4));
 
         $breed->toys()->sync(
             $toys->pluck('id')
         );
 
-        $this->info(console_line());
+        $this->info(
+            'Associated ' .
+            $toys->implode('name', ', ') .
+            " with {$breed->name}."
+        );
     });
 })->describe('Associate some Favorite Toys with some Breeds.');
 
