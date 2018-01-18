@@ -5,15 +5,6 @@
 
 **by:** *[@BeardAboutIt](https://twitter.com/BeardAboutIt)*
 
-<!-- MarkdownTOC autolink="true" autoanchor="true" bracket="round" -->
-
-- [Installation](#installation)
-- [Meetup Presentation](#meetup-presentation)
-- [Finished Version](#finished-version)
-
-<!-- /MarkdownTOC -->
-
-
 <a name="installation"></a>
 # Installation
 
