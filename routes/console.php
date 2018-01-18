@@ -66,6 +66,26 @@ Artisan::command('cats:seed-toys', function () {
     });
 })->describe('Set up some cat toys in the database.');
 
+Artisan::command('cats:associate-toys', function () {
+    $this->info(console_line());
+    $this->info('Associating some Favorite Toys with some Breeds.');
+    $this->info(console_line());
+
+    Breed::all()->each(function ($breed) {
+        $toys = Toy::all()
+            ->random(rand(2, 4))
+            ->each(function ($toy) use ($breed) {
+                $this->info("Associating {$toy->name} with {$breed->name}.");
+            });
+
+        $breed->toys()->sync(
+            $toys->pluck('id')
+        );
+
+        $this->info(console_line());
+    });
+})->describe('Associate some Favorite Toys with some Breeds.');
+
 Artisan::command('cats:seed-cats', function () {
     $this->info(console_line());
     $this->info('Seeding 6 Cats in the database.');
@@ -86,6 +106,7 @@ Artisan::command('cats:fresh', function () {
         $this->call('migrate:fresh');
         $this->call('cats:seed-breeds');
         $this->call('cats:seed-toys');
+        $this->call('cats:associate-toys');
         $this->call('cats:seed-cats');
     }
 })->describe('Reset all databases and seed some sane data for development.');
