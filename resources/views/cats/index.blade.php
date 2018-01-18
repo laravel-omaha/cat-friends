@@ -30,7 +30,7 @@
 
                     <p><strong>Favorite Toys:</strong></p>
 
-                    <p>{{ $cat->breed->toys->implode('name', ', ') }}</p>
+                    <p>{{ $cat->breed->toys->join(', ') }}</p>
                 </div>
 
                 <div class="level box">
