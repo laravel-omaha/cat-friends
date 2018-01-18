@@ -92,11 +92,11 @@ Artisan::command('cats:seed-cats', function () {
     $this->info('Seeding 6 Cats in the database.');
     $this->info(console_line());
 
-    factory(Cat::class, 6)->create();
-
-    Cat::all()->each(function ($cat) {
-        $this->info('Created ' . $cat->name);
-    });
+    factory(Cat::class, 6)
+        ->create()
+        ->each(function ($cat) {
+            $this->info('Created ' . $cat->name);
+        });
 })->describe('Seed 6 cats in the database.');
 
 Artisan::command('cats:fresh', function () {
