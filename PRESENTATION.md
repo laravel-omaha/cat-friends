@@ -1,6 +1,7 @@
 **Laravel Artisan for Every Day Driving**
 
 *A demo Laravel Project highlighting Laravel Artisan*
+*Created for the Omaha Laravel Meetup group*
 
 **by:** *@BeardAboutIt*
 
